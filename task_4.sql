@@ -1,3 +1,8 @@
-SELECT COLUMN_NAME, DATA_TYPE, IS_NULLABLE, COLUMN_DEFAULT 
-FROM INFORMATION_SCHEMA.COLUMNS 
-WHERE TABLE_NAME = 'books' AND TABLE_SCHEMA = 'alx_book_store';
+-- Use the alx_book_store database
+USE alx_book_store;
+
+-- Query to retrieve the column type information for the 'Books' table
+SELECT COLUMN_NAME, COLUMN_TYPE
+FROM INFORMATION_SCHEMA.COLUMNS
+WHERE TABLE_NAME = 'Books'
+  AND TABLE_SCHEMA = 'alx_book_store';
